@@ -13,12 +13,14 @@
 #ifndef PS_HEADER_H
 # define PS_HEADER_H
 
-typedef struct s_stack{
+typedef t_stack **t_cd_list;
+
+typedef struct s_cd_list{
 	void				*content;
 	int					index;
 	struct s_cd_list	*next;
 	struct s_cd_list	**head;
 	struct s_cd_list	*previous;
-}						t_stack;
+}						t_cd_list;
 
 #endif

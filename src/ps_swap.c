@@ -13,7 +13,14 @@
 
 void	sl_sa(t_stack a)
 {
+    t_cd_list *buff;
 
+    a.next->next->previous = a;
+    buff = a.next;
+    buff->previous = a.previous;
+    a.previous = a.next;
+    a.next = a.next->next;
+    buff->next = a;
 }
 
 void	sl_sb(t_stack a)

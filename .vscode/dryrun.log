@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/hanako/Documents/Project_42/push_swap'
+make: Leaving directory '/home/hanako/Documents/Project_42/push_swap'
+ 
+make: *** No targets.  Stop.
+

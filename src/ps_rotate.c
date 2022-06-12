@@ -2,7 +2,7 @@
 
 void	sl_ra(t_stack a)
 {
-
+    
 }
 
 void	sl_rb(t_stack b)
