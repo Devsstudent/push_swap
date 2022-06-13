@@ -1,5 +1,5 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
+make: *** No rule to make target '(addprefix', needed by 'push_swap'.  Stop.
 
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jun 12 03:36:21 2022
+# Make data base, printed on Mon Jun 13 00:57:07 2022
 
 # Variables
 
@@ -20,6 +20,8 @@ make: *** No rule to make target 'all'.  Stop.
 DESKTOP_SESSION = xubuntu
 # default
 .SHELLFLAGS := -c
+# makefile (from 'Makefile', line 2)
+OBJ = (addprefix obj/, ps_parsing.o ps_push.o ps_reverse.o ps_rotate.o ps_swap.o ps_utils.o main.o)
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -65,7 +67,7 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-d244f750-97b9-4762-9f0c-9a985ad3cc3d.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-9bb287bc-35c9-4db1-a43f-3e68d34d94de.sock
 # environment
 LC_NAME = fr_FR.UTF-8
 # environment
@@ -79,17 +81,19 @@ PATH = /home/hanako/.cargo/bin:/home/hanako/.local/bin:/usr/local/sbin:/usr/loca
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/hanako:@/tmp/.ICE-unix/2035,unix/hanako:/tmp/.ICE-unix/2035
+SESSION_MANAGER = local/hanako:@/tmp/.ICE-unix/2083,unix/hanako:/tmp/.ICE-unix/2083
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-WINDOWID = 77594627
+WINDOWID = 62914563
 # environment
 XDG_MENU_PREFIX = xfce-
 # environment
 VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
+# makefile (from 'Makefile', line 5)
+LIB = lib/libft
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -115,7 +119,7 @@ QT_QPA_PLATFORMTHEME = gtk2
 # environment
 XDG_SEAT = seat0
 # environment
-SSH_AGENT_PID = 2119
+SSH_AGENT_PID = 2168
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = XFCE
 # environment
@@ -159,9 +163,11 @@ USER = hanako
 # environment
 LC_MONETARY = fr_FR.UTF-8
 # makefile
-.DEFAULT_GOAL := 
+.DEFAULT_GOAL := all
 # environment
 XDG_CURRENT_DESKTOP = XFCE
+# makefile (from 'Makefile', line 4)
+NAME = push_swap
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -194,6 +200,8 @@ GDK_BACKEND = x11
 LC_PAPER = fr_FR.UTF-8
 # environment
 QT_ACCESSIBILITY = 1
+# makefile (from 'Makefile', line 1)
+FLAG = -Werror -Wextra -Wall -g -MMD -O3
 # default
 MAKEFILES := 
 # environment
@@ -202,6 +210,7 @@ LC_NUMERIC = fr_FR.UTF-8
 <F = $(notdir $<)
 # environment
 LC_MEASUREMENT = fr_FR.UTF-8
+ 
 # environment
 LC_ALL = C
 # automatic
@@ -216,6 +225,8 @@ CHROME_DESKTOP = code-url-handler.desktop
 LC_IDENTIFICATION = fr_FR.UTF-8
 # default
 .RECIPEPREFIX := 
+# makefile (from 'Makefile', line 3)
+D_LIST = (addprefix obj/, ps_parsing.d ps_push.d ps_reverse.d ps_rotate.d ps_swap.d ps_utils.d main.d)
 # environment
 LC_ADDRESS = fr_FR.UTF-8
 # environment
@@ -223,10 +234,9 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 5132
+VSCODE_PID = 2765
 # variable set hash-table stats:
-# Load=106/1024=10%, Rehash=0, Collisions=13/130=10%
- 
+# Load=111/1024=11%, Rehash=0, Collisions=16/140=11%
 
 # Pattern-specific Variable Values
 
@@ -235,28 +245,130 @@ VSCODE_PID = 5132
 # Directories
 
 # . (device 66311, inode 2376171): 7 files, no impossibilities.
+# src (device 66311, inode 2376190): No files, no impossibilities so far.
 
-# 7 files, no impossibilities in 1 directories.
+# 7 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
-# No implicit rules.
+obj/%.o: src/%.c | object
+#  recipe to execute (from 'Makefile', line 13):
+	$(CC) $(FLAG) -I $(LIB) -I ./includes -c $<-o $@
+
+# 1 implicit rules, 0 (0.0%) terminal.
 
 # Files
 
-# Not a target:
-all:
+all: push_swap
+#  Phony target (prerequisite of .PHONY).
 #  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+.PHONY: re all clean fclean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ps_swap.d:
 #  Implicit rule search has been done.
 #  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+ps_rotate.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+-object:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 16):
+	@mkdir -p obj
+
+# Not a target:
+ps_push.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+main.o):
+#  Implicit rule search has not been done.
+#  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 03:35:12.418074804
+#  Last modified 2022-06-13 00:52:38.734285796
 #  File has been updated.
 #  Successfully updated.
+
+# Not a target:
+ps_utils.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+ps_swap.o:
+ 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ps_rotate.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+main.d):
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+obj/,:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+ps_reverse.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+ps_parsing.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+fclean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 19):
+	rm -f $(OBJ)
+	rm -f $(D_LIST)
+	rm -rf obj
+	@make fclean -s -C $(LIB)
 
 # Not a target:
 .DEFAULT:
@@ -264,20 +376,76 @@ Makefile:
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+ps_utils.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+ 
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 25):
+	rm -f $(NAME)
+	@make clean -s -C $(LIB)
+
+push_swap: (addprefix obj/, ps_parsing.o ps_push.o ps_reverse.o ps_rotate.o ps_swap.o ps_utils.o main.o)
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 9):
+	@make -s -C $(LIB)
+	$(CC) $(FLAG) $(OBJ) -L $(LIB) -o $(NAME)
+
+# Not a target:
+ps_reverse.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ps_parsing.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+(addprefix:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+ps_push.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
 # files hash-table stats:
-# Load=4/1024=0%, Rehash=0, Collisions=0/14=0%
+# Load=26/1024=3%, Rehash=0, Collisions=3/63=5%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 12 / storage = 95 B / avg = 7 B
-# current buf: size = 8162 B / used = 95 B / count = 12 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 37 / storage = 330 B / avg = 8 B
+# current buf: size = 8162 B / used = 330 B / count = 37 / avg = 8 B
 
-# strcache performance: lookups = 16 / hit rate = 25%
+# strcache performance: lookups = 68 / hit rate = 45%
 # hash-table stats:
-# Load=12/8192=0%, Rehash=0, Collisions=1/16=6%
-# Finished Make data base on Sun Jun 12 03:36:21 2022
+# Load=37/8192=0%, Rehash=0, Collisions=3/68=4%
+# Finished Make data base on Mon Jun 13 00:57:07 2022
 
  

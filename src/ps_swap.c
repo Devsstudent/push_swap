@@ -9,27 +9,44 @@
 /*   Updated: 2022/06/11 18:28:34 by odessein         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "sl_header.h"
+#include "ps_header.h"
+//swap first and second value and so head too like 2nd element become head
+//Stack est l'adress de la head de la liste
 
-void	sl_sa(t_stack a)
+
+void	ps_sa(t_clist **stack_a)
 {
-    t_cd_list *buff;
+ 	t_clist	*second;
+	t_clist *buff;
 
-    a.next->next->previous = a;
-    buff = a.next;
-    buff->previous = a.previous;
-    a.previous = a.next;
-    a.next = a.next->next;
-    buff->next = a;
+	buff = *stack_a;
+	if (!(buff) || !(buff->next))
+		return ;
+	second = buff->next;
+	buff->next = second->next;
+	second->previous = buff->previous;
+	buff->previous = second;
+	ps_apply_new_head(second, stack_a);
 }
 
-void	sl_sb(t_stack a)
+void	ps_sb(t_clist **stack_b)
 {
+ 	t_clist	*second;
+	t_clist *buff;
 
+	buff = *stack_b;
+	if (!(buff) || !(buff->next))
+		return ;
+	second = buff->next;
+	buff->next = second->next;
+	second->previous = buff->previous;
+	buff->previous = second;
+	ps_apply_new_head(second, stack_b);
 }
 
-void	sl_ss(t_stack a, t_stack b)
+void	sl_ss(t_clist **stack_a, t_clist *stack_b)
 {
-
+	ps_sa(stack_a);
+	ps_sb(stack_b);
 }
 

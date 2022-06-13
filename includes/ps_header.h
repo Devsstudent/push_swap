@@ -1,4 +1,4 @@
-/* ************************************************************************** */
+	/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ps_header.h                                        :+:      :+:    :+:   */
@@ -13,14 +13,16 @@
 #ifndef PS_HEADER_H
 # define PS_HEADER_H
 
-typedef t_stack **t_cd_list;
+# include "libft.h"
 
-typedef struct s_cd_list{
-	void				*content;
-	int					index;
-	struct s_cd_list	*next;
-	struct s_cd_list	**head;
-	struct s_cd_list	*previous;
-}						t_cd_list;
+typedef struct s_clist{
+	void			*content;
+	int				index;
+	struct s_clist	*next;
+	struct s_clist	**head;
+	struct s_clist	*previous;
+}					t_clist;
+
+//typedef **t_cd_list t_stack;
 
 #endif

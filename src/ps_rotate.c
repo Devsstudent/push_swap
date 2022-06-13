@@ -1,16 +1,23 @@
 #include "ps_header.h"
-
-void	sl_ra(t_stack a)
+//head
+void	sl_ra(t_clist **stack_a)
 {
-    
+	t_cd_list	*new_head;
+
+	new_head = (*stack_a)->previous;
+	ft_apply(new_head, stack_a);
+}
+void	sl_rb(t_clist **stack_b)
+{
+	t_cd_list	*new_head;
+
+	new_head = (*stack_b)->previous;
+	ft_apply(new_head, stack_b);
+
 }
 
-void	sl_rb(t_stack b)
+void	sl_rr(t_clist **stack_a, t_clist **stack_b)
 {
-
-}
-
-void	sl_rr(t_stack a, t_stack b)
-{
-
+	sl_ra(stack_a);
+	sl_rb(stack_b);
 }
