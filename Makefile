@@ -1,18 +1,18 @@
 FLAG = -Werror -Wextra -Wall -g -MMD -O3
-OBJ = (addprefix obj/, ps_parsing.o ps_push.o ps_reverse.o ps_rotate.o ps_swap.o ps_utils.o main.o)
-D_LIST = (addprefix obj/, ps_parsing.d ps_push.d ps_reverse.d ps_rotate.d ps_swap.d ps_utils.d main.d)
+OBJ = $(addprefix obj/, ps_parsing.o ps_push.o ps_reverse.o ps_rotate.o ps_swap.o ps_utils.o main.o)
+D_LIST = $(addprefix obj/, ps_parsing.d ps_push.d ps_reverse.d ps_rotate.d ps_swap.d ps_utils.d main.d)
 NAME = push_swap
 LIB = lib/libft
 all : $(NAME)
 
 $(NAME): $(OBJ)
 	@make -s -C $(LIB)
-	$(CC) $(FLAG) $(OBJ) -L $(LIB) -o $(NAME)
+	$(CC) $(FLAG) $(OBJ) -L $(LIB) -lft -o $(NAME)
 
-obj/%.o : src/%.c | object
-	$(CC) $(FLAG) -I $(LIB) -I ./includes -c $<-o $@
+obj/%.o: src/%.c | object
+	$(CC) $(FLAG) -I $(LIB) -I ./includes -c $< -o $@
 
--object :
+object :
 	@mkdir -p obj
 
 fclean :

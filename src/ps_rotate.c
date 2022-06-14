@@ -2,17 +2,17 @@
 //head
 void	sl_ra(t_clist **stack_a)
 {
-	t_cd_list	*new_head;
+	t_clist	*new_head;
 
 	new_head = (*stack_a)->previous;
-	ft_apply(new_head, stack_a);
+	ps_apply_new_head(new_head, stack_a);
 }
 void	sl_rb(t_clist **stack_b)
 {
-	t_cd_list	*new_head;
+	t_clist	*new_head;
 
 	new_head = (*stack_b)->previous;
-	ft_apply(new_head, stack_b);
+	ps_apply_new_head(new_head, stack_b);
 
 }
 

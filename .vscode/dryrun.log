@@ -1,20 +1,6 @@
 make --dry-run --keep-going --print-directory
-make: Entering directory '/home/hanako/Documents/Project_42/push_swap'
+make: Entering directory '/mnt/nfs/homes/odessein/Project/push_swap'
+mkdir -p obj
  
-make: *** No rule to make target '(addprefix', needed by 'push_swap'.
-make: *** No rule to make target 'obj/,', needed by 'push_swap'.
-make: *** No rule to make target 'ps_parsing.o', needed by 'push_swap'.
-make: *** No rule to make target 'ps_push.o', needed by 'push_swap'.
-
-make: *** No rule to make target 'ps_reverse.o', needed by 'push_swap'.
-
-make: *** No rule to make target 'ps_rotate.o', needed by 'push_swap'.
-
-make: *** No rule to make target 'ps_swap.o', needed by 'push_swap'.
-
-make: *** No rule to make target 'ps_utils.o', needed by 'push_swap'.
-
-make: *** No rule to make target 'main.o)', needed by 'push_swap'.
-
-make: Leaving directory '/home/hanako/Documents/Project_42/push_swap'
+make: Leaving directory '/mnt/nfs/homes/odessein/Project/push_swap'
  

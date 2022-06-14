@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target '(addprefix', needed by 'push_swap'.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target '(addprefix', needed by 'push_swap'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jun 13 00:57:07 2022
+# Make data base, printed on Tue Jun 14 00:06:23 2022
 
 # Variables
 
@@ -17,11 +15,11 @@ make: *** No rule to make target '(addprefix', needed by 'push_swap'.  Stop.
 # automatic
 ?F = $(notdir $?)
 # environment
-DESKTOP_SESSION = xubuntu
+DESKTOP_SESSION = ubuntu
 # default
 .SHELLFLAGS := -c
 # makefile (from 'Makefile', line 2)
-OBJ = (addprefix obj/, ps_parsing.o ps_push.o ps_reverse.o ps_rotate.o ps_swap.o ps_utils.o main.o)
+OBJ = $(addprefix obj/, ps_parsing.o ps_push.o ps_reverse.o ps_rotate.o ps_swap.o ps_utils.o main.o)
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -33,121 +31,119 @@ VSCODE_LOG_NATIVE = false
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-XAUTHORITY = /home/hanako/.Xauthority
+XAUTHORITY = /mnt/nfs/homes/odessein/.Xauthority
 # environment
-GDMSESSION = xubuntu
-# default
-MAKE_VERSION := 4.2.1
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/hanako/Documents/Project_42/push_swap
+CURDIR := /mnt/nfs/homes/odessein/Project/push_swap
 # makefile
 SHELL = /bin/sh
 # environment
-GDM_LANG = en_US
+GDM_LANG = en
 # environment
 VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-XDG_CONFIG_DIRS = /etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg
+JOURNAL_STREAM = 9:3751613
 # environment
-GTK_OVERLAY_SCROLLING = 0
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST :=  Makefile
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# makefile (from 'obj/main.d', line 1)
+MAKEFILE_LIST :=  Makefile obj/ps_parsing.d obj/ps_push.d obj/ps_reverse.d obj/ps_rotate.d obj/ps_swap.d obj/ps_utils.d obj/main.d
 # automatic
 @F = $(notdir $@)
+# environment
+IM_CONFIG_PHASE = 1
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
-MAKELEVEL := 0
+MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
 # environment
-XDG_DATA_DIRS = /usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share
+XDG_DATA_DIRS = /usr/share/gnome:/usr/share/ubuntu:/mnt/nfs/homes/odessein/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/101841/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-9bb287bc-35c9-4db1-a43f-3e68d34d94de.sock
+MANAGERPID = 416753
 # environment
-LC_NAME = fr_FR.UTF-8
+VSCODE_IPC_HOOK_EXTHOST = /run/user/101841/vscode-ipc-b6803a25-c06d-4b48-b0e1-f78ea288751e.sock
 # environment
-VSCODE_CWD = /home/hanako/Documents/Project_42/push_swap
+VSCODE_CWD = /mnt/nfs/homes/odessein/Project/push_swap
 # environment
-XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session8
+# environment
+KRB5CCNAME = FILE:/tmp/krb5cc_101841_RxOlBR
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/hanako/.cargo/bin:/home/hanako/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH = /mnt/nfs/homes/odessein/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # environment
-GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+GPG_AGENT_INFO = /run/user/101841/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/hanako:@/tmp/.ICE-unix/2083,unix/hanako:/tmp/.ICE-unix/2083
+SESSION_MANAGER = local/e2r7p3.clusters.42paris.fr:@/tmp/.ICE-unix/417277,unix/e2r7p3.clusters.42paris.fr:/tmp/.ICE-unix/417277
 # environment
-XDG_RUNTIME_DIR = /run/user/1000
+XDG_RUNTIME_DIR = /run/user/101841
 # environment
-WINDOWID = 62914563
-# environment
-XDG_MENU_PREFIX = xfce-
+XDG_MENU_PREFIX = gnome-
 # environment
 VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
+# environment
+INVOCATION_ID = 0612a5ad99f543949eee19224cfa5b56
 # makefile (from 'Makefile', line 5)
 LIB = lib/libft
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
-XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/hanako
+XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/odessein
 # environment
 LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
 # environment
-XDG_SESSION_DESKTOP = xubuntu
+XDG_SESSION_DESKTOP = ubuntu
 # environment
-SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+SSH_AUTH_SOCK = /run/user/101841/keyring/ssh
 # automatic
 %F = $(notdir $%)
 # environment
-DISPLAY = :0.0
+DISPLAY = :0
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-PWD = /home/hanako/Documents/Project_42/push_swap
-# environment
-QT_QPA_PLATFORMTHEME = gtk2
+PWD = /mnt/nfs/homes/odessein/Project/push_swap
 # default
 .LOADED := 
 # environment
-XDG_SEAT = seat0
+SSH_AGENT_PID = 417233
 # environment
-SSH_AGENT_PID = 2168
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = XFCE
+GTK_MODULES = gail:atk-bridge
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-HOME = /home/hanako
+HOME = /mnt/nfs/homes/odessein
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /home/hanako/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+VSCODE_CODE_CACHE_PATH = /mnt/nfs/homes/odessein/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
 # environment
-LOGNAME = hanako
+LOGNAME = odessein
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
-# automatic
-+F = $(notdir $+)
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
-XDG_VTNR = 7
-# environment
-CLUTTER_BACKEND = x11
-# environment
-LC_TIME = fr_FR.UTF-8
+MAKELEVEL := 0
 # environment
 COLORTERM = truecolor
 # default
@@ -155,37 +151,35 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-SHLVL = 1
+QT_IM_MODULE = ibus
 # environment
-XDG_SESSION_ID = c2
+SHLVL = 2
+# default
+MAKE_VERSION := 4.2.1
 # environment
-USER = hanako
-# environment
-LC_MONETARY = fr_FR.UTF-8
+USER = odessein
 # makefile
 .DEFAULT_GOAL := all
 # environment
-XDG_CURRENT_DESKTOP = XFCE
-# makefile (from 'Makefile', line 4)
-NAME = push_swap
+XDG_CURRENT_DESKTOP = Unity
+# environment
+LIBVIRT_DEFAULT_URI = qemu:///system
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
-# environment
-LC_TELEPHONE = fr_FR.UTF-8
 # default
 MAKE_COMMAND := make
+# environment
+OLDPWD = /mnt/nfs/homes/odessein
 # default
 .VARIABLES := 
 # automatic
 *F = $(notdir $*)
 # environment
-LANGUAGE = en_US
+LANGUAGE = en
 # environment
 XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-dfac2463-1.67.2-main.sock
-# environment
-PANEL_GDK_CORE_DEVICE_EVENTS = 0
+VSCODE_IPC_HOOK = /run/user/101841/vscode-0e684af6-1.67.2-main.sock
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -196,25 +190,28 @@ MFLAGS = -pqrR
 +D = $(patsubst %/,%,$(dir $+))
 # environment
 GDK_BACKEND = x11
-# environment
-LC_PAPER = fr_FR.UTF-8
+# automatic
++F = $(notdir $+)
 # environment
 QT_ACCESSIBILITY = 1
 # makefile (from 'Makefile', line 1)
 FLAG = -Werror -Wextra -Wall -g -MMD -O3
+# environment
+DEFAULTS_PATH = /usr/share/gconf/ubuntu.default.path
 # default
 MAKEFILES := 
-# environment
-LC_NUMERIC = fr_FR.UTF-8
 # automatic
 <F = $(notdir $<)
 # environment
-LC_MEASUREMENT = fr_FR.UTF-8
- 
-# environment
 LC_ALL = C
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/5dcec1a6_1e1b_48a5_8e60_2bafc64f5b7f
 # automatic
 ^F = $(notdir $^)
+# environment
+GNOME_TERMINAL_SERVICE = :1.81
 # default
 SUFFIXES := 
 # environment
@@ -222,21 +219,23 @@ CHROME_DESKTOP = code-url-handler.desktop
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
-LC_IDENTIFICATION = fr_FR.UTF-8
+GJS_DEBUG_OUTPUT = stderr
+# makefile (from 'Makefile', line 4)
+NAME = push_swap
 # default
 .RECIPEPREFIX := 
 # makefile (from 'Makefile', line 3)
-D_LIST = (addprefix obj/, ps_parsing.d ps_push.d ps_reverse.d ps_rotate.d ps_swap.d ps_utils.d main.d)
-# environment
-LC_ADDRESS = fr_FR.UTF-8
+D_LIST = $(addprefix obj/, ps_parsing.d ps_push.d ps_reverse.d ps_rotate.d ps_swap.d ps_utils.d main.d)
 # environment
 LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 2765
+DOCKER_HOST = unix:///run/user/101841/docker.sock
+# environment
+VSCODE_PID = 418034
 # variable set hash-table stats:
-# Load=111/1024=11%, Rehash=0, Collisions=16/140=11%
+# Load=112/1024=11%, Rehash=0, Collisions=17/158=11%
 
 # Pattern-specific Variable Values
 
@@ -244,27 +243,43 @@ VSCODE_PID = 2765
 
 # Directories
 
-# . (device 66311, inode 2376171): 7 files, no impossibilities.
-# src (device 66311, inode 2376190): No files, no impossibilities so far.
+# . (device 58, inode 109480860): 11 files, no impossibilities.
+# src (device 58, inode 109480909): No files, no impossibilities so far.
 
-# 7 files, no impossibilities in 2 directories.
+# 11 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
 obj/%.o: src/%.c | object
 #  recipe to execute (from 'Makefile', line 13):
-	$(CC) $(FLAG) -I $(LIB) -I ./includes -c $<-o $@
+	$(CC) $(FLAG) -I $(LIB) -I ./includes -c $< -o $@
 
 # 1 implicit rules, 0 (0.0%) terminal.
 
 # Files
+
+# Not a target:
+obj/ps_parsing.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-14 00:01:52.003437096
+#  File has been updated.
+#  Successfully updated.
+
+obj/ps_utils.o: src/ps_utils.c includes/ps_header.h lib/libft/libft.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 all: push_swap
 #  Phony target (prerequisite of .PHONY).
 #  Command line target.
 #  Implicit rule search has not been done.
 #  File does not exist.
-#  File has not been updated.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+ 
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 
 .PHONY: re all clean fclean
 #  Implicit rule search has not been done.
@@ -272,34 +287,62 @@ all: push_swap
 #  File has not been updated.
 
 # Not a target:
-ps_swap.d:
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has been updated.
-#  Failed to be updated.
-
-# Not a target:
-ps_rotate.d:
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has been updated.
-#  Failed to be updated.
-
--object:
+src/ps_swap.c:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+
+# Not a target:
+src/ps_rotate.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+object:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := object
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
 #  recipe to execute (from 'Makefile', line 16):
 	@mkdir -p obj
 
-# Not a target:
-ps_push.o:
+obj/main.o: src/main.c includes/ps_header.h lib/libft/libft.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
-main.o):
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+lib/libft/libft.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/ps_reverse.o: src/ps_reverse.c includes/ps_header.h lib/libft/libft.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -307,57 +350,33 @@ main.o):
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-13 00:52:38.734285796
+#  Last modified 2022-06-14 00:05:47.271327695
 #  File has been updated.
 #  Successfully updated.
 
-# Not a target:
-ps_utils.d:
+obj/ps_parsing.o: src/ps_parsing.c src/ps_parsing.c includes/ps_header.h lib/libft/libft.h | object
 #  Implicit rule search has been done.
-#  File does not exist.
+#  Implicit/static pattern stem: 'ps_parsing'
+#  Last modified 2022-06-14 00:01:51.999437097
 #  File has been updated.
-#  Failed to be updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'Makefile', line 13):
+	$(CC) $(FLAG) -I $(LIB) -I ./includes -c $< -o $@
 
 # Not a target:
-ps_swap.o:
- 
+src/ps_utils.c:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
-ps_rotate.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-main.d):
+obj/ps_push.d:
 #  Implicit rule search has been done.
-#  File does not exist.
+#  Last modified 2022-06-14 00:01:52.05143708
 #  File has been updated.
-#  Failed to be updated.
-
-# Not a target:
-obj/,:
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has been updated.
-#  Failed to be updated.
-
-# Not a target:
-ps_reverse.d:
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has been updated.
-#  Failed to be updated.
-
-# Not a target:
-ps_parsing.d:
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has been updated.
-#  Failed to be updated.
+#  Successfully updated.
 
 fclean:
 #  Phony target (prerequisite of .PHONY).
@@ -371,16 +390,43 @@ fclean:
 	@make fclean -s -C $(LIB)
 
 # Not a target:
+src/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/ps_reverse.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/ps_parsing.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-13 23:55:06.131575951
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
-ps_utils.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+obj/ps_swap.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-14 00:01:52.187437033
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+obj/ps_rotate.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-14 00:01:52.13943705
+#  File has been updated.
+#  Successfully updated.
 
 re: fclean all
 #  Phony target (prerequisite of .PHONY).
@@ -388,7 +434,6 @@ re: fclean all
 #  File does not exist.
 #  File has not been updated.
 
- 
 clean:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
@@ -398,54 +443,79 @@ clean:
 	rm -f $(NAME)
 	@make clean -s -C $(LIB)
 
-push_swap: (addprefix obj/, ps_parsing.o ps_push.o ps_reverse.o ps_rotate.o ps_swap.o ps_utils.o main.o)
+push_swap: obj/ps_parsing.o obj/ps_push.o obj/ps_reverse.o obj/ps_rotate.o obj/ps_swap.o obj/ps_utils.o obj/main.o
 #  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
+#  Last modified 2022-06-14 00:05:48.843326807
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 #  recipe to execute (from 'Makefile', line 9):
 	@make -s -C $(LIB)
-	$(CC) $(FLAG) $(OBJ) -L $(LIB) -o $(NAME)
+	$(CC) $(FLAG) $(OBJ) -L $(LIB) -lft -o $(NAME)
 
-# Not a target:
-ps_reverse.o:
+obj/ps_push.o: src/ps_push.c includes/ps_header.h lib/libft/libft.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
-ps_parsing.o:
+includes/ps_header.h:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
-(addprefix:
+obj/ps_utils.d:
 #  Implicit rule search has been done.
-#  File does not exist.
+#  Last modified 2022-06-14 00:04:07.04338635
 #  File has been updated.
-#  Failed to be updated.
+#  Successfully updated.
+
+obj/ps_swap.o: src/ps_swap.c includes/ps_header.h lib/libft/libft.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/ps_rotate.o: src/ps_rotate.c includes/ps_header.h lib/libft/libft.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
-ps_push.d:
+obj/main.d:
 #  Implicit rule search has been done.
-#  File does not exist.
+#  Last modified 2022-06-14 00:05:00.479354557
 #  File has been updated.
-#  Failed to be updated.
+#  Successfully updated.
+
+# Not a target:
+src/ps_push.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/ps_reverse.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-14 00:01:52.095437065
+#  File has been updated.
+#  Successfully updated.
 
 # files hash-table stats:
-# Load=26/1024=3%, Rehash=0, Collisions=3/63=5%
+# Load=33/1024=3%, Rehash=0, Collisions=0/99=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 37 / storage = 330 B / avg = 8 B
-# current buf: size = 8162 B / used = 330 B / count = 37 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 47 / storage = 528 B / avg = 11 B
+# current buf: size = 8162 B / used = 528 B / count = 47 / avg = 11 B
 
-# strcache performance: lookups = 68 / hit rate = 45%
+# strcache performance: lookups = 107 / hit rate = 56%
 # hash-table stats:
-# Load=37/8192=0%, Rehash=0, Collisions=3/68=4%
-# Finished Make data base on Mon Jun 13 00:57:07 2022
+# Load=47/8192=1%, Rehash=0, Collisions=1/107=1%
+# Finished Make data base on Tue Jun 14 00:06:23 2022
 
  

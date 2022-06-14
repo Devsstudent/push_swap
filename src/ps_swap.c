@@ -44,7 +44,7 @@ void	ps_sb(t_clist **stack_b)
 	ps_apply_new_head(second, stack_b);
 }
 
-void	sl_ss(t_clist **stack_a, t_clist *stack_b)
+void	sl_ss(t_clist **stack_a, t_clist **stack_b)
 {
 	ps_sa(stack_a);
 	ps_sb(stack_b);

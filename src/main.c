@@ -6,14 +6,17 @@ int	main(int ac, char **av)
 	//Pas de doublons
 	//Must be number not greater than greater than maxint or lower of lowint
 	//Not error with no parameter
-	t_clist **stack_a;
-	t_clist **stack_b;
+	t_clist *stack_a;
+	t_clist *stack_b;
 
+	stack_a = NULL;
+	stack_b = NULL;
 	if (ac == 1)
 		return (0);
-	if (!sl_parsing(ac, av, stack_a, stack_b))
+	if (!ps_parsing(ac, av, &stack_a))
 	{
-		// WRITE ON STDERR NOT OUT ft_printf("Error\n");
+		ps_clst_clear(&stack_a);
+		ft_putstr_fd("Error\n", 2);
 		return (0);
 	}
 }
